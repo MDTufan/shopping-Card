@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Shopping Cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+   <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+   <section>
+      <div class="container">
+         <h1 class="p-2 text-center text-info ">My shopping Shoes</h1>
+         <div class="cart">
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div class="cart-item">
+                  <div class="row">
+                     <div class="col-6 text-center">
+                        <img class="py-5 hhjj" src="images/4.jpg" alt=""> 
+                        <div class="one">
+                           <h4 class="p-5" >The Best Product Of Shoes - $80</h4>
+                        </div>
+                        <div class="two">
+                           <div class="input-group number-spinner">
+                              <button id="Shoes-m" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                              <input id="Shoes-number" type="number" min="0" class="form-control text-center" value="1">
+                              <button id="Shoes-p" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           </div>
+                           <div class="one d-flex p-5 justify-content-between">
+                              <h5 >$ <span id="Shoes-total">80</span> </h5>
+                           <img src="images/x.png" alt="" class="remove-item">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-6 ">
+                        <img class="py-5 hhjj" src="images/5.jpg" alt=""> 
+                        <div class="one ">
+                           <h4 class="p-5" >The Best Product Of Shoes - $50</h4>
+                        </div>
+                        <div class="three">
+                           <div class="input-group number-spinner">
+                              <button id="Shoes5-m1" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                              <input id="Shoes5-number" type="number" min="0" class="form-control text-center" value="1">
+                              <button  id="Shoes5-p1" class="btn btn-default"><i class="fas fa-plus"></i></button>
+   
+                           </div>
+
+                           <div class="three d-flex p-5 justify-content-between">
+                              <h5>$ <span id="Shoes5-total">50</span> </h5>
+                              <img src="images/x.png" alt="" class="remove-item">
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               
+               
+              
+
+               <div class="cart-item">
+                  <div class="row g-2">
+
+                     <div class="col-6">
+                        <h5>SUBTOTAL:- </h5>
+                        
+                        <h5>Total:-</h5>
+                     </div>
+
+                     <div class="col-6 status">
+                        
+                        <h5>$<span id="sub-total">90</span></h5>
+                        
+                        <h5>$<span id="total-price">80</span></h5>
+                     </div>
+                     
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4 pb-4">
+                  <button type="button" class="btn btn-success check-out">Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script src="index.js"></script>
+</body>
+</html>
